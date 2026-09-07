@@ -198,6 +198,99 @@
       border-radius: 5px;
     }
 
+    #exam-notice {
+      display: flex;
+      position: fixed;
+      inset: 0;
+      z-index: 10000;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      background: rgba(10, 14, 24, 0.78);
+      font-family: "Noto Sans Devanagari", sans-serif;
+    }
+
+    .exam-notice-box {
+      width: min(620px, 100%);
+      padding: 30px 38px 38px;
+      border-radius: 16px;
+      color: #101d41;
+      text-align: center;
+      background: #fff;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    }
+
+    .exam-notice-box h2 {
+      margin: 0 0 14px;
+      color: #b52b20;
+      font-size: clamp(1.5rem, 3.5vw, 2rem);
+      font-weight: 800;
+    }
+
+    .exam-notice-intro,
+    .exam-notice-footer {
+      margin: 0 auto 20px;
+      font-size: clamp(0.95rem, 2.2vw, 1.08rem);
+      font-weight: 700;
+      line-height: 1.7;
+    }
+
+    .exam-notice-table {
+      width: 100%;
+      margin: 14px 0 18px;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: clamp(0.9rem, 2vw, 1rem);
+    }
+
+    .exam-notice-table th,
+    .exam-notice-table td {
+      padding: 9px 12px;
+      border: 1px solid #bcc5d5;
+    }
+
+    .exam-notice-table th {
+      background: #e5edfc;
+      font-weight: 800;
+    }
+
+    .exam-notice-table td {
+      font-weight: 400;
+    }
+
+    .exam-notice-box button {
+      margin-top: 2px;
+      padding: 10px 24px;
+      border: 0;
+      border-radius: 999px;
+      color: #fff;
+      background: #4f8bf9;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .exam-notice-box button:hover {
+      background: #3a74d1;
+    }
+
+    @media screen and (max-width: 520px) {
+      .exam-notice-box {
+        padding: 24px 18px 28px;
+      }
+
+      .exam-notice-intro,
+      .exam-notice-footer {
+        line-height: 1.55;
+      }
+
+      .exam-notice-table th,
+      .exam-notice-table td {
+        padding: 8px;
+      }
+    }
+
     @media screen and (max-width: 768px) {
       .sidebar {
         width: 100%;
